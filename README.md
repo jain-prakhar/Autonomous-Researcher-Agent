@@ -90,7 +90,7 @@ The final output is displayed in a Streamlit UI and exported as a downloadable P
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
+git clone https://github.com/jain-prakhar/Autonomous-Researcher-Agent.git
 cd YOUR_REPO
 pip install -r requirements.txt
 ```
