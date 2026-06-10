@@ -1,0 +1,8 @@
+streamlit
+langchain-google-genai
+langgraph
+tavily-python
+arxiv
+chromadb
+python-dotenv
+reportlab
