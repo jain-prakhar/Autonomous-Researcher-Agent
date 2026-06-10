@@ -122,38 +122,4 @@ python main.py
 
 ---
 
-## Deployment (Streamlit Community Cloud)
 
-1. Push the project to a GitHub repository (make sure `.env` is in `.gitignore`)
-2. Go to [share.streamlit.io](https://share.streamlit.io) and connect your repo
-3. Set the main file to `app.py`
-4. Under **Advanced settings → Secrets**, add:
-
-```toml
-GOOGLE_API_KEY = "your_google_api_key"
-TAVILY_API_KEY = "your_tavily_api_key"
-```
-
-5. Deploy — your app will be live at a public URL within minutes
-
----
-
-## Example Output
-
-Given the query **"Future of multimodal large language models in enterprise applications"**, the pipeline will:
-
-- Generate 5–8 sub-tasks (e.g. *current applications*, *integration challenges*, *benchmarks*, *future trends*)
-- Search the web for each sub-task via Tavily
-- Fetch the top 10 related ArXiv papers
-- Store all content in ChromaDB and retrieve the most relevant chunks
-- Write a report with sections: Executive Summary, Introduction, Key Findings, Benefits, Challenges, Future Trends, Conclusion
-- Append a reference list with titles, authors, dates, and source URLs
-- Export the full report as a PDF
-
----
-
-## Notes
-
-- The ChromaDB collection is cleared and re-populated on every run, so each report starts fresh
-- The Writer agent is explicitly prevented from hallucinating — it can only use content returned by the Retriever
-- Temperature is set to `0.2` for consistent, factual output
