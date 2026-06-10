@@ -122,4 +122,4 @@ python main.py
 
 ---
 
-
+**APP Link** - [Autonomous Reseacher Version Alpha](https://autonomous-researcher-valpha.streamlit.app/)
